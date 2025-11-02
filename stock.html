@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok mobil| Kenyaa's Motor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .stok-page-content {
+            padding: 40px 0;
+            min-height: 500px; /* Agar konten tidak terlalu pendek */
+        }
+        .stok-page-content h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        /* Asumsikan Anda sudah punya gaya untuk .car-grid dan .car-card di style.css */
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <p>📞 Hubungi Kami: 0813-1495-5106 | 📍 Lokasi: Kota Bogor</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Kenyaa's Motor</a>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="stok.html" class="active">STOK MOBIL</a></li>
+                        <li><a href="simulasi.html" target="_blank">SIMULASI KREDIT</a></li>
+                        <li><a href="berita.html" target="_blank">BERITA</a></li>
+                        <li><a href="tentang.html" target="_blank">TENTANG KAMI</a></li>
+                        <li><a href="kontak.html" target="_blank">KONTAK</a></li>
+                    </ul>
+                </nav>
+                <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="stok-page-content container">
+        <h2>Semua Stok Mobil Tersedia</h2>
+
+         <section class="car-listing container">
+        <h2>🔥 New Cars In My Shoroom</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="https://imgx.gridoto.com/crop/0x77:1600x1066/360x0/photo/2021/04/22/6ffec990-topcar-stinger-gtr-whit-20210422082053.jpg" alt="Porsche">
+                <div class="car-info">
+                    <span class="tag">BARU DATANG</span>
+                    <h3>Porsche 911 Turbo S PDK 2022</h3>
+                    <p class="car-spec">
+                        <i class="fas fa-calendar-alt"></i> 2022 | <i class="fas fa-tachometer-alt"></i>  New Car
+                    </p>
+                    <p class="price">Rp 3.491.000.000</p>
+                    <a href="#" class="btn btn-detail">Detail Mobil</a>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7TU8sR8FuXPBWpwcdIXKwlhQ3y2W7p9B6A&s" alt="Ferrai">
+                <div class="car-info">
+                    <span class="tag tag-promo">Limited Edition</span>
+                    <h3>Ferrari 458 2015</h3>
+                    <p class="car-spec">
+                        <i class="fas fa-calendar-alt"></i> 2015 | <i class="fas fa-tachometer-alt"></i> 40.000 Km
+                    </p>
+                    <p class="price">Rp 4.990.000.000</p>
+                    <a href="#" class="btn btn-detail">Detail Mobil</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://beritajatim.com/wp-content/uploads/2025/05/11zon_resized-18-1.jpeg" alt="Jesko Attack">
+                <div class="car-info">
+                    <span class="tag">Only One in Indonesian</span>
+                    <h3>Jesko Attack 2021</h3>
+                    <p class="car-spec">
+                        <i class="fas fa-calendar-alt"></i> 2021 | <i class="fas fa-tachometer-alt"></i> 20.000 Km
+                    </p>
+                    <p class="price">Rp 56.000.000.000</p>
+                    <a href="#" class="btn btn-detail">Detail Mobil</a>
+                </div>
+            </div>
+            
+        
+        <div class="car-grid" id="stokMobilGrid">
+            </div>
+
+        <p id="stok-kosong-pesan" style="text-align: center; display: none;">Maaf, stok mobil saat ini kosong.</p>
+    </section>
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h4>IVANS MOTOR</h4>
+                <p>Dealer mobil bekas terpercaya di Jakarta Selatan. Kami menjamin unit berkualitas dengan harga terbaik.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>LINK CEPAT</h4>
+                <ul>
+                    <li><a href="stok.html">Stok Mobil</a></li>
+                    <li><a href="simulasi.html">Simulasi Kredit</a></li>
+                    <li><a href="kontak.html">Lokasi Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>HUBUNGI KAMI</h4>
+                <p><i class="fas fa-phone"></i> Telepon: (021) xxxxxxx</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: 0812-xxxx-xxxx</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Jakarta Selatan No. 123</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Ivans Motor. All Rights Reserved. Design by Clone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/62812xxxxxxxx" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i> Chat Kami
+    </a>
+
+    <script src="script.js"></script> 
+</body>
+</html>

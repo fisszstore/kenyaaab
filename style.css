@@ -1,0 +1,356 @@
+/* --- GLOBAL RESET & TYPOGRAPHY --- */
+:root {
+    --primary-color: #d81b21; /* Merah Khas Kenyaa's Motor */
+    --secondary-color: #333;
+    --light-bg: #f8f8f8;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tombol Dasar */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-primary-large {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.btn-primary-large:hover {
+    background-color: #b0151a;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- HEADER & NAVIGASI --- */
+.header-top {
+    background-color: #222;
+    color: #eee;
+    font-size: 0.9em;
+    padding: 8px 0;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #eee;
+    margin-left: 10px;
+}
+
+.header-main {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    display: block;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover, .main-nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+/* --- HERO SECTION & QUICK SEARCH (index.html) --- */
+.hero-section {
+    background: url('https://via.placeholder.com/1500x500?text=Background+Banner+Mobil') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 100px;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.quick-search-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: -50px auto 0;
+    box-shadow: var(--box-shadow);
+}
+
+.quick-search-box h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.quick-search-box form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quick-search-box select, .quick-search-box button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.quick-search-box button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+.quick-search-box button:hover {
+    background-color: #b0151a;
+}
+
+/* ===================================== */
+/* --- STYLES KHUSUS HALAMAN STOK & BERITA --- */
+/* ===================================== */
+
+.stok-header, .berita-header {
+    text-align: center;
+    padding: 60px 0 20px;
+    background-color: var(--light-bg);
+    border-bottom: 2px solid #ddd;
+}
+
+.stok-page-content, .berita-page-content {
+    padding: 40px 0;
+    min-height: 500px;
+}
+
+/* --- CAR LISTING (Kartu Mobil) --- */
+.car-listing {
+    padding: 60px 20px;
+}
+
+.car-listing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.car-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 15px;
+    position: relative;
+}
+
+.car-info .tag {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+/* Warna tag dinamis dari JS (sesuai penamaan di script.js) */
+.limited-edition { background-color: #007bff; }
+.only-one-in-indonesian { background-color: #ffc107; color: #333; }
+.best-seller { background-color: #28a745; }
+.ready { background-color: #17a2b8; }
+.baru-datang { background-color: #dc3545; }
+
+
+.car-info h3 {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    min-height: 40px;
+}
+
+.car-spec {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-detail {
+    background-color: #555;
+    color: white;
+    width: 100%;
+}
+
+.btn-detail:hover {
+    background-color: var(--primary-color);
+}
+
+
+/* --- BERITA CARD STYLES --- */
+.berita-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+.berita-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: transform 0.3s;
+}
+.berita-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.berita-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.berita-content {
+    padding: 20px;
+}
+.berita-content h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    min-height: 60px;
+}
+.berita-meta {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+.btn-readmore {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-readmore:hover {
+    text-decoration: underline;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-col h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
